@@ -2,10 +2,10 @@
 
 A simple and lightweight plugin that blocks the placement of item frames in configurable WorldGuard regions.
 
-## Download
+### Download
 **Download at:** http://ci.chaseoes.com/job/NoItemFramesWG
 
-## Commands
+### Commands
 <table>
   <tr>
     <th>Command Usage</th><th>Description</th>
@@ -24,7 +24,7 @@ A simple and lightweight plugin that blocks the placement of item frames in conf
   </tr>
 </table>
 
-## Permissions
+### Permissions
 <table>
   <tr>
     <th>Permission</th><th>Description</th>
@@ -39,7 +39,7 @@ A simple and lightweight plugin that blocks the placement of item frames in conf
   </tr>
 </table>
 
-## Configuration
-    placement-denied-message: '&cItem frames are disabled in the market to prevent lag. Sorry!'
+### Configuration
+    placement-denied-message: '&cItem frames are disabled in this area.'
     regions:
       - example
