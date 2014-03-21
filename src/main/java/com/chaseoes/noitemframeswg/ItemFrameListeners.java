@@ -19,7 +19,7 @@ public class ItemFrameListeners implements Listener {
             Location location = event.getBlock().getLocation();
             ApplicableRegionSet set = WGBukkit.getRegionManager(location.getWorld()).getApplicableRegions(location);
             for (ProtectedRegion region : set) {
-                if (region.contains(location.getBlockX(), location.getBlockY(), location.getBlockZ())) {
+                if (NoItemFramesWG.getInstance().getConfig().getStringList("regions").contains(region.getId())) {
                     event.setCancelled(true);
                     event.getPlayer().sendMessage(ChatColor.translateAlternateColorCodes('&', NoItemFramesWG.getInstance().getConfig().getString("placement-denied-message")));
                     event.getPlayer().updateInventory();
